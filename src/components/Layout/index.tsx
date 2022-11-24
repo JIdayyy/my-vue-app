@@ -14,7 +14,7 @@ export default function Layout() {
   return (
     <Center
       position="relative"
-      p={10}
+      p={[2, 4, 5, 10]}
       bg="#0C0C0C"
       maxW="100vw"
       maxH="100vh"
@@ -24,16 +24,17 @@ export default function Layout() {
       <Flex
         zIndex={100}
         justifyContent="space-between"
-        p={10}
+        p={[2, 4, 5, 10]}
         border="1px solid #FFFFFF"
         w="full"
         h="full"
+        flexDir={["column", "column", "row", "row"]}
       >
         <Canvas />
 
-        <Flex direction="column">
+        <Flex zIndex={200} direction="column">
           <Flex direction="column">
-            <Text fontSize={60}>
+            <Text fontSize={[30, 40, 50, 60]}>
               JULIEN <br />
               Abbadie
             </Text>

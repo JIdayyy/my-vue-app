@@ -17,7 +17,10 @@ export default function SceneCanvas() {
       h="100vh"
       position="absolute"
     >
-      <Canvas style={{ position: "absolute", zIndex: 0 }} dpr={[1, 2]}>
+      <Canvas
+        style={{ position: "absolute", zIndex: 0, pointerEvents: "none" }}
+        dpr={[1, 2]}
+      >
         <Suspense fallback={<Loader />}>
           <CustomScene />
         </Suspense>

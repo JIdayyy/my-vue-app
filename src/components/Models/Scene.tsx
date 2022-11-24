@@ -3,8 +3,6 @@
 */
 
 import { PerspectiveCamera } from "@react-three/drei";
-import { useLoader, useGraph } from "@react-three/fiber";
-import SplineLoader from "@splinetool/loader";
 import useSpline from "@splinetool/r3f-spline";
 
 export default function Scene({ ...props }) {
